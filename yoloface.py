@@ -118,18 +118,18 @@ def _main():
 
         # Remove the bounding boxes with low confidence
         faces = post_process(frame, outs, CONF_THRESHOLD, NMS_THRESHOLD)
-        print('[i] ==> # detected faces: {}'.format(len(faces)))
-        print('#' * 60)
+        #print('[i] ==> # detected faces: {}'.format(len(faces)))
+        #print('#' * 60)
 
         # initialize the set of information we'll displaying on the frame
-        info = [
-            ('number of faces detected', '{}'.format(len(faces)))
-        ]
-
-        for (i, (txt, val)) in enumerate(info):
-            text = '{}: {}'.format(txt, val)
-            cv2.putText(frame, text, (10, (i * 20) + 20),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.7, COLOR_RED, 2)
+        #info = [
+        #    ('number of faces detected', '{}'.format(len(faces)))
+        #]
+#
+ #       for (i, (txt, val)) in enumerate(info):
+  #          text = '{}: {}'.format(txt, val)
+   #         cv2.putText(frame, text, (10, (i * 20) + 20),
+    #                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, COLOR_RED, 2)
 
         # Save the output video to file
         if args.image:
