@@ -21,7 +21,7 @@ import cv2
 # Parameters
 # -------------------------------------------------------------------
 
-CONF_THRESHOLD = 0.5
+CONF_THRESHOLD = 0.7
 NMS_THRESHOLD = 0.4
 IMG_WIDTH = 416
 IMG_HEIGHT = 416
